@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>
+        ISKRA Cinema
+    </title>
+    <link rel="stylesheet" content="text/css" href="../css/common_style.css" media="all" />
+    <link rel="stylesheet" content="text/css" href="../css/ticket.css" media="all" />
+</head>
+
+<body>
+    <div class="transluscent-mat">
+        
+        <header>
+            <div class="header">
+                
+                <div id="bannerlogo">
+                    <a class="homelink" href="homepage.html"><h1>ISKRA Cinema</h1></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="shiftup">
+            
+            <nav>
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="homepage.html">Movies</a>
+                    </li>
+                    <li class="nav">
+                        <a href="now_showing.html">Program</a>
+                    </li>
+                    <li class="nav">
+                        <a href="ticket.html" id="currentlink">Ticket</a>
+                    </li>
+                    <li class="nav">
+                        <a href="login.html">Login</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="layout">
+                <h4 class="pageheading">BOOK FOR</h4>
+                <h2 id="movie_title"></h2>
+				<h4 id="movie_in"></h4>
+				<div id="screen_container">
+					
+					<div class="table" id="table">
+	
+					</div>
+					<br>
+					<div id="form_container">
+						<form action="now_showing.html" method="GET">
+							<button type="submit" onclick="return submitForm();">Submit</button>
+						</form>
+					</div>
+					<br>
+					<div id="info">
+						<div class="colour-block" id="available"></div><span class="status">Available</span>
+						<div class="colour-block" id="unavailable"></div><span class="status">Unavailable</span>
+						<div class="colour-block" id="selected"></div><span class="status">Selected</span>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<script type="text/javascript" src="../js/movie_info.js"></script>
+	<script type="text/javascript" src="../js/tickets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>
+        ISKRA Cinema
+    </title>
+    <link rel="stylesheet" type="text/css" href="../css/common_style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/now_showing.css" media="all" />
+</head>
+
+<body>
+	<div class="transluscent-mat">
+        <!--Banner-->
+        <header>
+            <div class="header">
+                
+                <div id="bannerlogo">
+                    <a class="homelink" href="homepage.html"><h1>ISKRA Cinema</h1></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="shiftup">
+        <!--Navigation menu-->
+            <nav>
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="homepage.html">Movies</a>
+                    </li>
+                    <li class="nav">
+                        <a href="now_showing.html" id="currentlink">Program</a>
+                    </li>
+                    <li class="nav">
+                        <a href="ticket.html">Ticket</a>
+                    </li>
+                    <li class="nav">
+                        <a href="login.html">Login</a>
+                    </li>
+                   
+                    
+                </ul>
+            </nav>
+            <div class="layout">
+                
+                <h4 class="pageheading">NOW SHOWING</h4>
+                <div class="nsblock">
+                    <div class="nsblock-left">
+                        <img class="img" src="..\images\1.jpg" alt="Nature's Revenge" />
+                    </div>
+                    <div class="nsblock-right">
+                      
+                        <form class="form" action="ticket.html" method="get">
+							<h3><span class="form_movie"></span></h3>
+							<div class="choices">
+								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
+								<select name="date" class="date"></select>
+								<select name="time" class="time"></select>
+								<input type="hidden" name="titleIndex" value=0 />
+								<button type="submit">Buy Ticket</button>
+							</div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="layout">
+                <div class="nsblock">
+                    <div class="nsblock-left">
+                        <img class="img" src="..\images\7.jpg" alt="In Between Posts" />
+                    </div>
+                    <div class="nsblock-right">
+                        <form class="form" action="ticket.html" method="get">
+							<h3><span class="form_movie"></span></h3>
+							<div class="choices">
+								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
+								<select name="date" class="date"></select>
+								<select name="time" class="time"></select>
+								<input type="hidden" name="titleIndex" value=1 />
+								<button type="submit">Buy Ticket</button>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+            <div class="layout">
+                <div class="nsblock">
+                    <div class="nsblock-left">
+                        <img class="img" src="..\images\8.jpg" alt="Jonty Cobra: Grail" />
+                    </div>
+                    <div class="nsblock-right">
+                        <form class="form" action="ticket.html" method="get">
+							<h3><span class="form_movie"></span></h3>
+							<div class="choices">
+								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
+								<select name="date" class="date"></select>
+								<select name="time" class="time"></select>
+								<input type="hidden" name="titleIndex" value=2 />
+								<button type="submit">Buy Ticket</button>
+							</div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+        <script type="text/javascript" src="../js/now_showing.js"></script>
+</body>
+</html>
